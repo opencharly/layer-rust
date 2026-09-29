@@ -4,9 +4,10 @@ The Rust toolchain (rustc compiler + cargo package manager) for OpenCharly
 images, installed from distro repositories.
 
 The `rust` candy installs the Rust compiler and Cargo from the distro repos —
-`rust` + `cargo` on Arch and Fedora, `rustc` + `cargo` on Debian and Ubuntu —
-with `~/.cargo/bin` appended to `PATH`. Both binaries land at `/usr/bin` and
-report a version string, so a developer can compile and build Rust crates inside
+`rust` + `cargo` on Fedora, `rustc` + `cargo` on Debian and Ubuntu, and the `rust`
+package on Arch — with `~/.cargo/bin` appended to `PATH`. Both binaries land at
+`/usr/bin` and report a version string (the candy's `plan:` asserts `rustc` and
+`cargo` on every arm), so a developer can compile and build Rust crates inside
 the image.
 
 ## What it provides
